@@ -82,10 +82,10 @@ Hacker Nowful is a cybersecurity enthusiast and developer with a passion for cre
 
 Special thanks to the open-source community and contributors who have helped in the development and improvement of PandaScriptor. Your support and contributions are greatly appreciated.
 
-<br>
-#ducky #duckyscriptconverter #duckylib #PandaScriptor #pandapod
-
 Start converting your Ducky Scripts effortlessly with PandaScriptor and take full advantage of your Arduino boards' capabilities!
 
 Visit [PandaScriptor](https://hackernowful.github.io/PandaScriptor/) to get started.
+
+<br>
+#ducky #duckyscriptconverter #duckylib #PandaScriptor #pandapod #hackernowful #samykamkar
 
