@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html id="html">
+<head>
+    <title>PandaScriptor</title>
+    <link rel="icon" href="panda.png" type="image/gif" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="description" content="Convert DuckyScript to Keyboard Scripts">
+    <meta name="keywords" content="bad usb, rubber ducky, esp32 hid, ble ducky, HackerNowful, convert, script, digispark">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <h1>🐼 PandaScriptor 🐼 </h1>
+            <p>by Hacker Nowful</p>
+        </div>
+    </div>
+    <div class="container about">
+        <p>Convert DuckyScript scripts to Keyboard scripts that you can use with various platforms.</p>
+        <p>Why DuckyScript and why Keyboard? DuckyScript is simple and easy to learn and has become a standard in the BadUSB and pentesting community.
+            Keyboard library is a standard library for Arduino which makes it compatible with various Arduino boards including Digispark and ESP32.</p>
+    </div><br>
+    <div class="container">
+        <textarea rows="15" id="inputBox" placeholder="Enter DuckyScript to convert..."></textarea>
+        <center><select id="platformSelect">
+            <option value="" disabled selected>Select your board</option>
+            <option value="arduino">Arduino</option>
+            <option value="digispark">Digispark</option>
+            <option value="esp32">ESP32</option>
+            <!-- Add more platform options as needed -->
+        </select></center>
+        
+        <center><button class="btn btn5" onclick="if(document.getElementById('inputBox').value != ''){convert()}">Convert</button></center>
+        <textarea rows="15" id="outputBox" placeholder="Converted Keyboard script will appear here. Paste it into the Arduino IDE to load it onto your board."></textarea>
+    </div><br>
+    <footer>
+        <p>
+ 
+          <span id="contact">GitHub: 
+            <a href="https://github.com/HackerNowful">https://github.com/HackerNowful
+            </a>
+          </span>
+          <span id="website">website: 
+            <a href="http://www.hypesecinfotech.com">www.hypesecinfotech.com
+            </a>
+          </span>
+        </p>
+      </footer> 
+</body>
+</html>

@@ -1,0 +1,221 @@
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 300px rgba(0, 255, 255, 0.2) inset;
+    }
+    to {
+        box-shadow: 0 0 320px rgba(0, 255, 255, 0.5) inset;
+    }
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    box-shadow: 0 0 300px rgba(0, 255, 255, 0.2) inset;
+    animation-name: glowing;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+body {
+    position: relative;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Enable momentum scrolling in iOS */
+}
+
+/* Hide the scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Compensate for hidden scrollbar */
+body {
+    padding-right: 20px; /* Adjust as needed */
+}
+
+h1 {
+    color: #111117;
+    text-align: center;
+}
+
+.navbar {
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    line-height: 0.5em;
+    font-size: 18px;
+}
+
+.navbar h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    font-size: 20px;
+    color: #111117;
+    display: block;
+    width: 80%;
+    height: 280px;
+    text-align: left;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 190, 190, 1);
+    background: rgba(0, 255, 255, 0.1);
+    border-radius: 4px;
+    z-index: 20;
+    transition: all 0.3s;
+}
+
+textarea:hover {
+    box-shadow: 0 0 20px red;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+.btn5 {
+    align-items: center;
+    color: aqua;
+    border: 1px solid rgba(0, 190, 190, 1);
+    background-color: transparent;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    mask-size: 90% 80%;
+    font-family: verdana, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 15%;
+    height: 40px;
+    margin: 1% 3%;
+}
+
+.btn5:hover,
+.btn5:active {
+    color: black;
+}
+
+.btn5:hover:after {
+    width: 100%;
+    opacity: 1;
+}
+
+footer {
+    display: block;
+    width: 90%;
+    height: 50px;
+    margin: 10px auto;
+    border: 1px solid rgba(0, 190, 190, 1);
+    background: transparent;
+    border-radius: 4px;
+    z-index: 20;
+    transition: all 0.3s;
+}
+
+footer p {
+    color: black;
+    font-family: verdana, sans-serif;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-family: verdana, sans-serif;
+    transition: all 0.3s;
+}
+
+footer p a:hover {
+    color: rgba(0, 255, 255, 1.0);
+}
+
+#contact {
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+}
+
+#website {
+    text-align: right;
+    float: right;
+    margin-right: 10px;
+}
+
+#platformSelect {
+    width: 200px; /* Adjust width as needed */
+    padding: 8px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: 1px solid #ccc; /* Adjust border color and width as needed */
+    border-radius: 5px; /* Adjust border radius as needed */
+    margin-top: 20px; /* Adjust margin top as needed */
+}
+
+/* Media query for devices with a maximum width of 768 pixels (tablets and smaller screens) */
+@media only screen and (max-width: 768px) {
+    /* CSS styles for tablets and smaller screens */
+    body {
+        padding-right: 10px; /* Adjust as needed */
+    }
+    .navbar h1 {
+        font-size: 16px; /* Adjust font size as needed */
+    }
+    textarea {
+        width: 90%; /* Adjust width as needed */
+    }
+    .btn5 {
+        width: 30%; /* Adjust width as needed */
+    }
+}
+
+/* Media query for devices with a maximum width of 480 pixels (smartphones) */
+@media only screen and (max-width: 480px) {
+    /* CSS styles for smartphones */
+    body {
+        padding-right: 5px; /* Adjust as needed */
+    }
+    .navbar h1 {
+        font-size: 14px; /* Adjust font size as needed */
+    }
+    textarea {
+        width: 95%; /* Adjust width as needed */
+    }
+    .btn5 {
+        width: 40%; /* Adjust width as needed */
+    }
+    footer p {
+        color: black;
+        font-family: verdana, sans-serif;
+        font-size: 14px;
+    }
+    #website {
+        text-align: left;
+        float: left;
+        margin-left: auto;
+    }
+    footer {
+        display: block;
+        width: 90%;
+        height: 60px;
+        margin: 10px auto;
+        border: 1px solid rgba(0, 190, 190, 1);
+        background: transparent;
+        border-radius: 4px;
+        z-index: 20;
+        transition: all 0.3s;
+    }
+}
